@@ -5,27 +5,27 @@ import Image2 from "../../assets/hero/shopping.png";
 import Image3 from "../../assets/hero/sale.png";
 import Slider from "react-slick";
 
-const Hero = () => {
-    const ImageList = [
-        {
-            id: 1,
-            img: Image1,
-            title: "Upto 50% off on all Men's Wear",
-            description: "His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        },
-        {
-            id: 2,
-            img: Image2,
-            title: "30% off on all Women's Wear",
-            description: "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        },
-        {
-            id: 3,
-            img: Image3,
-            title: "70% off on all Products Sale",
-            description: "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        },
-    ];
+const ImageList = [
+    {
+        id: 1,
+        img: Image1,
+        title: "Upto 50% off on all Men's Wear",
+        description: "His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+        id: 2,
+        img: Image2,
+        title: "30% off on all Women's Wear",
+        description: "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+        id: 3,
+        img: Image3,
+        title: "70% off on all Products Sale",
+        description: "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+];
+const Hero = ({handleOrderPopup}) => {
 
     const settings = {
         dots: true,
@@ -53,7 +53,7 @@ const Hero = () => {
                                     <h1 className="text-5xl sm:text-6xl lg:text-7cl font-bold">{item.title}</h1>
                                     <p className="text-sm">{item.description}</p>
                                     <div>
-                                        <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">Order Now</button>
+                                        <button onClick={handleOrderPopup} className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">Order Now</button>
                                     </div>
                                 </div>
                                 {/* image section */}
