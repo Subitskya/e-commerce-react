@@ -59,7 +59,7 @@ const Hero = () => {
                                 {/* image section */}
                                 <div className="order-1 sm:order-2">
                                     <div className="relative z-10">
-                                        <img src={item.img} alt="" className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain mx-auto"/>
+                                        <img src={item.img} alt="" className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto"/>
                                     </div>
                                 </div>
                             </div>
