@@ -13,7 +13,7 @@ const Subscribe = () => {
         <div className="container backdrop-blur-sm py-10">
             <div className="space-y-6 max-w-xl mx-auto">
                 <h1>Get Notified About New Products</h1>
-                <input data-aos="fade-up" type="text" placeholder="Enter your email" className="w-full p-3 rounded-full"/>
+                <input data-aos="fade-up" type="text" placeholder="Enter your email" className="w-full p-3 rounded-full text-black"/>
             </div>
         </div>
     </div>
